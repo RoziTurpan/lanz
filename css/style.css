@@ -27,9 +27,15 @@ a,a:visited{
 .header{
 	height: 160px;
 }
+.header .logo{
+	position:relative;
+	top: 22px;
+}
 .header ul li{
 	float: left;
 	width: 20%;
+	height:160px;
+	overflow:hidden;
 	text-align:center;
 }
 .header ul li a{
@@ -70,6 +76,7 @@ a,a:visited{
 .contact-wrap{
 	background:#fff;
 	padding: 260px 0 125px;
+	margin-bottom:10px;
 	font-size:24px;
 	color: #000;
 	text-align:center;
