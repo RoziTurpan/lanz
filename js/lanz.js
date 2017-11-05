@@ -1,6 +1,6 @@
 $(function() {
 	$(".J_lazy img").lazyload({
-		placeholder: "/images/project/no-pic.png", 
+		placeholder: "../images/project/no-pic.png", 
 		effect: "fadeIn", // effect(特效),值有show(直接显示),fadeIn(淡入),slideDown(下拉)等,常用fadeIn
 		threshold: 200, // 提前开始加载
 		// event: 'click', // 事件触发时才加载
