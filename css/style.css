@@ -1,0 +1,87 @@
+/* reset */
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0;}body,button,input,select,textarea{font:12px/1.5 tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;}h1,h2,h3,h4,h5,h6{font-size:100%;}address,cite,dfn,em,var{font-style:normal;}code,kbd,pre,samp{font-family:courier new,courier,monospace;}small{font-size:12px;}ol,ul{list-style:none}a{text-decoration:none;}a:hover{text-decoration:underline;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}legend{color:#000;}fieldset,img{border:0;}button,input,select,textarea{font-size:100%;}table{border-collapse:collapse;border-spacing:0;}
+
+/* common */
+body{
+	background: #f0f0f0;
+	font: 14px/1.5 "Microsoft Yahei","Microsoft Yahei UI",sans-serif,"Hiragino Sans GB",tahoma;
+}
+.clearfix:after{
+	content:'';
+	clear:both;
+	display:block;
+	height:0;
+	visibility:hidden;
+}
+.container{
+	width:1200px;
+	margin:0 auto;
+}
+a,a:visited{
+	color:#969696;
+}
+.lang-en{
+	font-family: "Century Gothic";
+}
+
+.header{
+	height: 160px;
+}
+.header ul li{
+	float: left;
+	width: 20%;
+	text-align:center;
+}
+.header ul li a{
+	font-size:24px;
+	color:#969696;
+	line-height: 160px;
+	text-decoration:none;
+	transition:ease all 0.3s;
+	-webkit-transition:ease all 0.3s;
+	-moz-transition:ease all 0.3s;
+}
+.header ul li.cur a,.header ul li:hover a{
+	color:#ff0000;
+}
+
+/* project */
+.project-wrap{
+
+}
+.project-wrap ul{
+	padding-bottom:28px;
+}
+.project-wrap ul li{
+	float:left;
+	width:381px;
+	height:221px;
+	padding:28px 0 0 28px;
+	transition:ease all 0.3s;
+}
+.project-wrap ul li:nth-child(3n+1){
+	padding-left:0;
+}
+.project-wrap ul li:hover{
+	/*transform: scale(1.1);*/
+}
+
+.footer{
+	min-height:300px;
+	border-top:1px solid #969696;
+	padding-top:5px;
+}
+.footer .left-content{
+	width:465px;
+	float:left;
+}
+.footer .right-content{
+	float:left;
+	padding-left: 135px;
+
+}
+.footer p{
+	font-size:12px;
+	color:#969696;
+	line-height:20px;
+}
