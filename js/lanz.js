@@ -1,8 +1,8 @@
 $(function() {
 	$(".J_lazy img").lazyload({
-		placeholder: "../images/project/no-pic.png", 
+		placeholder: "./images/project/no-pic.png",
 		effect: "fadeIn", // effect(特效),值有show(直接显示),fadeIn(淡入),slideDown(下拉)等,常用fadeIn
-		threshold: 200, // 提前开始加载
+		threshold: 100, // 提前开始加载
 		// event: 'click', // 事件触发时才加载
 		// container: $("#container"), // 对某容器中的图片实现效果
 		// container,值为某容器.lazyload默认在拉动浏览器滚动条时生效,这个参数可以让你在拉动某DIV的滚动条时依次加载其中的图片
