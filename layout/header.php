@@ -19,7 +19,7 @@
     <div class="container">
         <a href="/" class="logo"><img src="/images/new-logo.png" alt="Logo" /></a>
         <div class="lang">
-            <a href="/">中</a>
+            <a href="javascript:;" class="cur">中</a>
             <span>|</span>
             <a href="/">EN</a>
         </div>

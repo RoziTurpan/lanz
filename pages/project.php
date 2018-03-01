@@ -9,7 +9,11 @@ include_once '../layout/header.php' ;
         <?php
             $len = 21;
             for($i = 1; $i <= $len ; $i++) {
-                echo "<a href='javascript:;'><img src='/images/project/project-" .$i. ".jpg' alt='LanzDesign' /></a>" ;
+            	if($i == 1){
+	                echo "<a href='/pages/project-show/1.php'><img src='/images/project/project-" .$i. ".jpg' alt='LanzDesign' /></a>" ;
+            	}else{
+	                echo "<a href='javascript:;'><img src='/images/project/project-" .$i. ".jpg' alt='LanzDesign' /></a>" ;
+            	}
             }
         ?>
     </div>

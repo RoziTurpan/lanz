@@ -46,7 +46,47 @@ include_once '../layout/header.php' ;
         </div>
         <div class="member clearfix">
             <div class="member-item fll">
-
+                <h3>苏林辉 <span>Allan</span></h3>
+                <h4>设计总监，创始人</h4>
+                <p>2011年毕业于浙江工业大学<br />
+                    大学期间获得浙江省工业设计奖金奖和银奖<br />
+                    曾经在法资ZOO Design工作<br />
+                    受法式设计思维和设计方法的影响<br />
+                    在设计中一直追求创新和不懈尝试新的突破<br />
+                    而后在港资、大陆设计公司工作多年<br />
+                    设计风格坚持简约清雅，主张功能与美学结合<br />
+                </p>
+                <div class="avatar">
+                    <img src="/images/project/no-pic.png" width="381px" alt="Allan" />
+                </div>
+            </div>
+            <div class="member-item fll">
+                <h3>陈强<span>Wing</span></h3>
+                <h4>机械工程师</h4>
+                <p>毕业于深圳大学，硕士<br />
+                    在某激光上市公司从事机械设计10多年<br />
+                    拥有十余项发明专利和实用新型专利<br />
+                    在机械类产品和机器人方面有丰富的经验<br />
+                    借助有限元分析技术<br />
+                    他能模拟真实的生产可行性<br />
+                    和物理性能的优劣
+                </p>
+                <div class="avatar">
+                    <img src="/images/project/no-pic.png" width="381px" alt="Allan" />
+                </div>
+            </div>
+            <div class="member-item fll">
+                <h3>苏伟松<span>Weso</span></h3>
+                <h4>结构设计师</h4>
+                <p>在结构设计、模具设计、模具制造<br />
+                    和生产组装等方面工作20余年<br />
+                    精通光学模拟分析<br />
+                    这能评估产品中光线的分布和均匀度<br />
+                    并提出合理的光学设计方案
+                </p>
+                <div class="avatar">
+                    <img src="/images/project/no-pic.png" width="381px" alt="Allan" />
+                </div>
             </div>
         </div>
     </div>

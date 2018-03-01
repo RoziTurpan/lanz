@@ -14,12 +14,12 @@
             <div class="contact-item noborder">
                 <span class="icon-total icon-mail"></span>
                 <span class="icon-total icon-skype"></span>
-                <a href="mailto:lanz_allansu@126.com">lanz_allansu@126.com</a>
+                <a href="mailto:lanz_allansu@126.com" title="发送邮件">lanz_allansu@126.com</a>
             </div>
         </div>
         <div class="flr">
             <div class="contact-item">
-                <span class="icon-total icon-be"></span>
+                <a href="https://www.behance.net/LANZ_TECH" target="_blank" title="LANZ DESIGN 朗哲"><span class="icon-total icon-be"></span></a>
                 <span class="icon-total icon-in"></span>
                 <span class="icon-total icon-pin"></span>
                 <span class="icon-total icon-code"></span>
