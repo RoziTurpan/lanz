@@ -19,15 +19,15 @@
     <div class="container">
         <a href="/" class="logo"><img src="/images/new-logo.png" alt="Logo" /></a>
         <div class="lang">
-            <a href="javascript:;" class="cur">中</a>
+            <a href="/">中</a>
             <span>|</span>
-            <a href="/en/index.php">EN</a>
+            <a href="javascript:;" class="cur">EN</a>
         </div>
         <ul class="clearfix">
-            <li><a href="/pages/project.php" <?php if($cur_project) { echo 'class="cur"' ; } ?>>作品</a></li>
-            <li><a href="/pages/about.php" <?php if($cur_about) { echo 'class="cur"' ; } ?>>简介</a></li>
-            <li><a href="/pages/service.php" <?php if($cur_service) { echo 'class="cur"' ; } ?>>服务</a></li>
-            <li><a href="/pages/contact.php" <?php if($cur_contact) { echo 'class="cur"' ; } ?>>联系</a></li>
+            <li><a href="/pages/project.php" <?php if($cur_project) { echo 'class="cur"' ; } ?>>Project</a></li>
+            <li><a href="/pages/about.php" <?php if($cur_about) { echo 'class="cur"' ; } ?>>About</a></li>
+            <li><a href="/pages/service.php" <?php if($cur_service) { echo 'class="cur"' ; } ?>>Service</a></li>
+            <li><a href="/pages/contact.php" <?php if($cur_contact) { echo 'class="cur"' ; } ?>>Contact</a></li>
         </ul>
     </div>
 </div>
