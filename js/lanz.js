@@ -15,6 +15,15 @@ $(function() {
 	/**
 	* 移动端跳转
 	*/
-	window.location.href = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ? "/mobile/index.html" :  "/index.html";
+	// window.location.href = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ? "/mobile/index.html" :  "/index.html";
+	var ua = navigator.userAgent;
+	if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(ua) && $(window).width() <= 1000) {
+		location.href = '/mobile/index.html'
+	}
+	$(window).on('load resize', function(){
+		if($(window).width() <= 1000){
+			location.href = '/mobile/index.html'
+		}
+	})
 
 })

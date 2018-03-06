@@ -4,11 +4,19 @@ $(function(){
 	var navFlag = true;
 	$('.nav').on('click', function(){
 		if(navFlag){
-			$('.mask').fadeIn();
 			navFlag = false;
+			$('.mask').fadeIn();
+			$('header .menu').show();
 		}else{
-			$('.mask').fadeOut();
 			navFlag = true;
+			$('.mask').fadeOut();
+			$('header .menu').hide();
+		}
+	});
+
+	$(window).on('load resize', function(){
+		if($(window).width() > 1000){
+			location.href = '/index.html'
 		}
 	})
 })
