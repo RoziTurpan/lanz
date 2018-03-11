@@ -21,7 +21,7 @@ $(function() {
 		location.href = '/mobile/index.html'
 	}
 	$(window).on('load resize', function(){
-		if($(window).width() <= 1000){
+		if($(window).width() <= 1200){
 			location.href = '/mobile/index.html'
 		}
 	})
