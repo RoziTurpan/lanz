@@ -1,14 +1,16 @@
 $(function(){
 
-	$('.mask').width($(document).width()).height($(document).height());
+	$('.mask,header .menu').width($(document).width()).height($(document).height());
 	var navFlag = true;
 	$('.nav').on('click', function(){
 		if(navFlag){
 			navFlag = false;
+			$('body').css('overflow-y','hidden');
 			$('.mask').fadeIn();
 			$('header .menu').show();
 		}else{
 			navFlag = true;
+			$('body').css('overflow-y','auto');
 			$('.mask').fadeOut();
 			$('header .menu').hide();
 		}
@@ -19,4 +21,16 @@ $(function(){
 			location.href = '/index.html'
 		}
 	})
+
+	var navObj = $('header');
+    var lH = navObj.offset().top;
+    $(window).on('scroll', function() {
+        if ($(window).scrollTop() > lH) {
+            navObj.addClass('fixed-nav');
+        } else {
+            navObj.removeClass('fixed-nav');
+        }
+    });
+
+
 })
