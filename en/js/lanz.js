@@ -11,18 +11,18 @@ $(function() {
 			// failurelimit,值为数字.lazyload默认在找到第一张不在可见区域里的图片时则不再继续加载,但当HTML容器混乱的时候可能出现可见区域内图片并没加载出来的情况,failurelimit意在加载N张可见区域外的图片,以避免出现这个问题.
 	});
 	*/
-
+	
 	/**
 	* 移动端跳转
 	*/
 	// window.location.href = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ? "/mobile/index.html" :  "/index.html";
 	var ua = navigator.userAgent;
-	if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(ua) && $(window).width() <= 1000) {
+	if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(ua) && $(window).width() <= 1000) {
 		location.href = '/mobile/index.html'
 	}
-	$(window).on('load resize', function () {
-		if ($(window).width() <= 1200) {
-			location.href = '/mobile/en/index.html'
+	$(window).on('load resize', function(){
+		if($(window).width() <= 1200){
+			location.href = '/mobile/index.html'
 		}
 	})
 
