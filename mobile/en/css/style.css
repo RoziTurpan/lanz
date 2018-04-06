@@ -25,7 +25,7 @@ body{font-size:20px;background: #e6e6e6;font-family:-apple-system, BlinkMacSyste
 .mask{width: 100%;height: 100%;background: rgba(0,0,0,0.6);position:absolute;left: 0;top: 0;z-index:10;display: none;}
 
 /* header */
-header{background: #fff;line-height: 6em;;position:relative;z-index:12;max-width:54em;margin: 0 auto 1.2em;}
+header{background: #fff;line-height: 6em;;position:relative;z-index:12;max-width:54em;margin: 0 auto 1.2em;width:100%;transition: ease all 0.3s;}
 header .logo{float: left;padding: 0 1.5em;}
 header .logo img{width: 8em;position: relative;top: -0.5em;left: 0.3em;}
 header .nav{float: right;padding: 0 1.5em;}
@@ -35,6 +35,7 @@ header .menu li{text-align: center;font-size: 1.9em;line-height: 3.5em;}
 header .menu li a{color: #969696;display: block;-webkit-tap-highlight-color:rgba(0,0,0,0.5);letter-spacing:0.1em;}
 header .menu li.lang{margin:1.2em;padding-top:1.2em;border-top:1px solid #b4b4b4;color:#5c5c5c;}
 header .menu li.lang a{display: inline-block;padding:0 0.5em;}
+.fixed-nav{position:fixed;top:0;z-index: 99;}
 
 section{position: relative;}
 section img{width: 100%;font-size: 0;}
@@ -54,15 +55,15 @@ section img{width: 100%;font-size: 0;}
 
 /* about */
 .about-page section{margin-bottom: 0.6em;background: #fff;color: #646464;position: relative;text-align: center;padding-bottom:6em;}
-.about-page .section1 h3{position:absolute;top:0px;left:0.8em;font-size:2em;font-weight:normal;background:#b4b4b4;color:#fff;width:108px;height:50px;line-height:50px;}
+.about-page .section1 h3{position:absolute;top:0px;left:0.8em;font-size:2em;font-weight:normal;background:#b4b4b4;color:#fff;width:5.4em;height:2.5em;line-height:2.5em;letter-spacing:2px;}
 .about-page .section1 img{width:12em;font-size: 1em;margin:8em 0;}
-.about-page section p{font-size:1.5em;line-height: 2em;}
+.about-page section p{font-size:1.35em;line-height: 2em;}
 .about-page .section2 img{width: 15em;font-size: 1em;margin: 6em 0;}
 .about-page .section3 p{padding-top: 3em;}
 .about-page .section3 hr{width:90%;border: none;border-bottom: 1px solid #ccc;}
 .about-page .section4{padding-bottom: 2em;}
 .about-page .section4 .awards{padding-top: 5em;margin-bottom:4em;}
-.about-page .section4 .awards p{font-size:1.75em;}
+.about-page .section4 .awards p{font-size:1.5em;}
 .about-page .section4 .member{width:84%;padding:6%;background:#e6e6e6;margin: 2em auto;text-align: left;font-size:0.8em;position: relative;}
 .about-page .section4 .member h3{font-size:2.5em;font-weight: normal;margin-top:2em;}
 .about-page .section4 .member .avatar{position: absolute;width: 10em;height: 10em;top: 0;right:1.5em;background: #c3f1f2;}
@@ -71,7 +72,7 @@ section img{width: 100%;font-size: 0;}
 .service-page section{margin-bottom: 0.6em;background: #fff;color: #646464;position: relative;text-align: center;padding-bottom:4em;}
 .service-page section p{font-size:1.5em;line-height: 2em;}
 .service-page .section1{padding-top: 9em;}
-.service-page .section1 h3{position:absolute;top:0px;left:1em;font-size:2em;font-weight:normal;background:#b4b4b4;color:#fff;padding:0.6em 1.6em;}
+.service-page .section1 h3{position:absolute;top:0px;left:0.8em;font-size:2em;font-weight:normal;background:#b4b4b4;color:#fff;width:5.4em;height:2.5em;line-height:2.5em;letter-spacing:2px;}
 .service-page .section2{}
 .service-page .section2 h3{font-size:2.2em;font-weight:normal;padding:2em 1.5em;line-height:1.6em;text-align:left;}
 .service-page .section2 .sec-item{position: relative;margin-bottom: 1em;}
@@ -88,9 +89,9 @@ section img{width: 100%;font-size: 0;}
 /* contact */
 .contact-page section{margin-bottom: 0.6em;background: #fff;color: #646464;position: relative;text-align: center;}
 .contact-page .section1{padding: 9em 0 0.5em;margin-bottom:1em;}
-.contact-page .section1 h3{position:absolute;top:0px;left:1em;font-size:2em;font-weight:normal;background:#b4b4b4;color:#fff;padding:0.6em 1.6em;}
+.contact-page .section1 h3{position:absolute;top:0px;left:0.8em;font-size:2em;font-weight:normal;background:#b4b4b4;color:#fff;width:5.4em;height:2.5em;line-height:2.5em;letter-spacing:2px;}
 .contact-page .section1 .icon-location{display:block;background-image:url('../images/contact/icon-location.png');background-repeat:no-repeat;width:7.5em;height:7.5em;background-size:100%;margin: 0 auto 1.5em;}
-.contact-page .section1 p{font-size:1.8em;line-height: 2em;color: #646464;margin-bottom: 1em;}
+.contact-page .section1 p{font-size:1.7em;line-height: 2em;color: #646464;margin-bottom: 1em;}
 .contact-page .section1 a img{width: 98%;}
 .contact-page .section2{padding-bottom:4em;}
 .contact-page .section2 h3{font-size:1.8em;font-weight:normal;text-align:left;padding:1.5em 1em;}
@@ -140,9 +141,12 @@ footer .cont-item.no-border a{font-size: medium;line-height: normal;float:none;}
 footer .copyright{text-align:center;padding-bottom: 1em;}
 
 @media only screen and (max-width:350px){
+	.about-page section .member p{font-size: 1.9em;}
+	.contact-page .section3 .con-item a{font-size: 1.7em;}
+	.about-page .section4 .awards p{font-size: 1.5em;}
 	footer .cont-item .icon-small{width: 3.75em;}
-	footer .cont-item .icon-location{width: 4.2em;}
-	footer .cont-item .icon-location+a{float: right;padding-top: 0.5em;}
+	footer .cont-item .icon-location{width: 3.9em;margin-right: 0;}
+	footer .cont-item .icon-location+a{float: right;}
 	footer .cont-item .icon-big{width: 3em;height: 3em;}
 }
 
