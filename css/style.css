@@ -156,5 +156,5 @@ a,a:visited,a:hover{text-decoration:none;color:#969696;}
 .contact-page .section03 .con-item .icon-skype{background-position: -325px -222px;}
 
 /* project-show */
-.project-show-page{/* margin: 30px auto 10px; */}
+.project-show-page{/* margin: 30px auto 10px; */font-size:0;}
 .project-show-page img{/* margin-bottom: 20px; */}
