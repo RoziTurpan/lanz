@@ -25,6 +25,7 @@ body{font-size:20px;background: #e6e6e6;font-family:'Helvetica',-apple-system, B
 .mask{width: 100%;height: 100%;background: rgba(0,0,0,0.6);position:absolute;left: 0;top: 0;z-index:10;display: none;}
 
 /* header */
+.header-wrap{height:7.2em;}
 header{background: #fff;line-height: 6em;;position:relative;z-index:12;max-width:54em;margin: 0 auto 1.2em;width:100%;transition: ease all 0.3s;}
 header .logo{float: left;padding: 0 1.5em;}
 header .logo img{width: 8em;position: relative;top: -0.5em;left: 0.3em;}
@@ -55,7 +56,9 @@ section img{width: 100%;font-size: 0;}
 
 /* about */
 .about-page section{margin-bottom: 0.6em;background: #fff;color: #646464;position: relative;text-align: center;padding-bottom:6em;}
-.about-page .section1 h3{position:absolute;top:0px;left:0.8em;font-size:2em;font-weight:normal;background:#b4b4b4;color:#fff;width:5.4em;height:2.5em;line-height:2.5em;letter-spacing:2px;}
+/* .about-page .section1 h3{position:absolute;top:0px;left:1.1em;font-size:2em;font-weight:normal;background:#b4b4b4;color:#fff;width: 96px;height:2.5em;line-height:2.5em;letter-spacing:2px;} */
+.about-page .section1 h3{text-align:left;padding:0 1.8em;}
+.about-page .section1 h3 img{width: 8em;margin: 0;}
 .about-page .section1 img{width:12em;font-size: 1em;margin:8em 0;}
 .about-page section p{font-size:1.35em;line-height: 2em;letter-spacing: 1px;}
 .about-page .section1 p{letter-spacing:0;}
@@ -72,9 +75,10 @@ section img{width: 100%;font-size: 0;}
 /* service */
 .service-page section{margin-bottom: 0.6em;background: #fff;color: #646464;position: relative;text-align: center;padding-bottom:4em;}
 .service-page section p{font-size:1.5em;line-height: 2em;}
-.service-page .section1{padding-top: 9em;}
-.service-page .section1 h3{position:absolute;top:0px;left:0.8em;font-size:2em;font-weight:normal;background:#b4b4b4;color:#fff;width:5.4em;height:2.5em;line-height:2.5em;letter-spacing:2px;}
-.service-page .section2{}
+.service-page .section1{/* padding-top: 9em; */}
+/* .service-page .section1 h3{position:absolute;top:0px;left:1.1em;font-size:2em;font-weight:normal;background:#b4b4b4;color:#fff;width: 96px;height:2.5em;line-height:2.5em;letter-spacing:2px;} */
+.service-page .section1 h3{text-align:left;padding:0 1.8em 5.5em;}
+.service-page .section1 h3 img{width: 8em;margin: 0;font-size: 1em;}
 .service-page .section2 h3{font-size:2.2em;font-weight:normal;padding:2em 1.5em;line-height:1.6em;text-align:left;}
 .service-page .section2 .sec-item{position: relative;margin-bottom: 1em;}
 .service-page .section2 .sec-item img{width: 95%;}
@@ -89,8 +93,10 @@ section img{width: 100%;font-size: 0;}
 
 /* contact */
 .contact-page section{margin-bottom: 0.6em;background: #fff;color: #646464;position: relative;text-align: center;}
-.contact-page .section1{padding: 9em 0 0.5em;margin-bottom:1em;}
-.contact-page .section1 h3{position:absolute;top:0px;left:0.8em;font-size:2em;font-weight:normal;background:#b4b4b4;color:#fff;width:5.4em;height:2.5em;line-height:2.5em;letter-spacing:2px;}
+.contact-page .section1{/* padding: 9em 0 0.5em; */margin-bottom:1em;}
+/* .contact-page .section1 h3{position:absolute;top:0px;left:1.1em;font-size:2em;font-weight:normal;background:#b4b4b4;color:#fff;width: 96px;height:2.5em;line-height:2.5em;letter-spacing:2px;} */
+.contact-page .section1 h3{text-align:left;padding:0 1.8em 5.5em;}
+.contact-page .section1 h3 img{width: 8em;margin: 0;font-size: 1em;}
 .contact-page .section1 .icon-location{display:block;background-image:url('../images/contact/icon-location.png');background-repeat:no-repeat;width:7.5em;height:7.5em;background-size:100%;margin: 0 auto 1.5em;}
 .contact-page .section1 p{font-size:1.7em;line-height: 2em;color: #646464;margin-bottom: 1em;}
 .contact-page .section1 a img{width: 98%;}
@@ -120,7 +126,7 @@ section img{width: 100%;font-size: 0;}
 
 /* footer */
 footer{background: #fff;color: #969696;max-width:54em;margin: 1.2em auto 0;}
-footer .cont-item{width: 90%;margin: 0 auto;border-bottom: 1px solid #e6e6e6;padding: 1em 0;}
+footer .cont-item{width: 91%;margin: 0 auto;border-bottom: 1px solid #e6e6e6;padding: 1em 0;}
 footer .cont-item a{float:right;/* display: inline-block;vertical-align: top; */line-height: 3em;font-size:1.7em;color: #969696;}
 footer .cont-item a i{display:block;width:100%;text-align:right;}
 footer .cont-item .icon-small{display: inline-block;width: 3.8em;height: 3.8em;background-size:100%;margin-right: 1em;}
