@@ -136,12 +136,12 @@ a,a:visited,a:hover{text-decoration:none;color:#969696;}
 .contact-page .section01{width: 1115px;height: 580px;background: #fff;padding:20px 20px 0 65px;}
 .contact-page .section01 .location{display: block;width:82px;height:82px;margin: 180px 0 25px 0;background: url('../images/icon-total.png') no-repeat center;background-position:-243px -217px;}
 .contact-page .section01 p{font-size: 20px;line-height: 40px;color: #646464;}
-.contact-page .section02{width: 1070px;height: 510px;padding: 95px 65px;background: #fff;margin-top: 20px;color: #646464;}
-.contact-page .section02 h3{font-size: 22px;margin-bottom: 95px;font-weight:400;}
-.contact-page .section02 .sec-item{float:left;/* width: 50%; */margin-bottom: 60px;}
+.contact-page .section02{width: 1070px;height: 470px;padding: 95px 65px;background: #fff;margin-top: 20px;color: #646464;}
+.contact-page .section02 h3{font-size: 22px;margin-bottom: 66px;font-weight:400;}
+.contact-page .section02 .sec-item{float:left;/* width: 50%; */margin-bottom: 50px;}
 .contact-page .section02 .sec-item.flr{float: right;}
 .contact-page .section02 .sec-item a{float: left;}
-.contact-page .section02 .sec-item .icon{display: block;background:url('/en/images/icon-total.png') no-repeat center center;width: 142px;height:142px;transform: scale(0.75);position:relative;top: 15px;}
+.contact-page .section02 .sec-item .icon{display: block;background:url('/en/images/icon-total.png') no-repeat center center;width: 142px;height:142px;transform: scale(0.85);position:relative;top: 15px;}
 .contact-page .section02 .sec-item .icon-be{background-position: -140px 0;}
 .contact-page .section02 .sec-item .icon-code{background-position: -448px -140px;}
 .contact-page .section02 .sec-item .icon-in{background-position: -282px 0;width: 140px;}
