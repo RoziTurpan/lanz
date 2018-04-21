@@ -93,8 +93,8 @@ section img{width: 100%;font-size: 0;}
 .service-page .section3 .sec-item1 h2{padding:0 0 0.8em 0.9em;}
 
 /* contact */
-.contact-page section{background: #fff;color: #646464;position: relative;text-align: center;}
-.contact-page .section1{/* padding: 9em 0 0.5em; */}
+.contact-page section{background: #fff;color: #646464;position: relative;text-align: center;margin-bottom:1em;}
+.contact-page .section1{/* padding: 9em 0 0.5em; */margin-bottom:0;}
 /* .contact-page .section1 h3{position:absolute;top:0px;left:1em;font-size:2em;font-weight:normal;background:#b4b4b4;color:#fff;padding:0.6em 1.6em;} */
 .contact-page .section1 h3{text-align:left;padding:0 1.8em 9em;}
 .contact-page .section1 h3 img{width: 8em;margin: 0;font-size: 1em;}
