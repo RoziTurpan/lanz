@@ -123,15 +123,12 @@ section img{width: 100%;font-size: 0;}
 .contact-page .section3 .icon-mail{background-image:url('../images/contact/icon-mail.png');}
 .contact-page .section3 .icon-skype{background-image:url('../images/contact/icon-skype.png');}
 
-
-
-
 /* footer */
 footer{background: #fff;color: #969696;max-width:54em;margin: 1.2em auto 0;}
 footer .cont-item{width: 91%;margin: 0 auto;border-bottom: 1px solid #e6e6e6;padding: 1em 0;}
 footer .cont-item a{float:right;/* display: inline-block;vertical-align: top; */line-height: 3em;font-size:1.6em;color: #969696;}
 footer .cont-item a i{display:block;width:100%;text-align:right;}
-footer .cont-item .icon-small{display: inline-block;width: 3.8em;height: 3.8em;background-size:100%;margin-right: 2em;}
+footer .cont-item .icon-small{display: inline-block;width: 3.8em;height: 3.8em;background-size:100%;background-repeat: no-repeat;margin-right: 2em;}
 footer .cont-item .icon-mobile{background-image: url('../images/iconf-mobile.png');}
 footer .cont-item .icon-wx{background-image: url('../images/iconf-wx.png');}
 footer .cont-item .icon-tel{background-image: url('../images/iconf-tel.png');}
@@ -139,14 +136,14 @@ footer .cont-item .icon-fax{background-image: url('../images/iconf-fax.png');}
 footer .cont-item .icon-mail{background-image: url('../images/iconf-mail.png');}
 footer .cont-item .icon-skype{background-image: url('../images/iconf-skype.png');}
 footer .cont-item .icon-location{background-image: url('../images/iconf-location.png');}
-footer .cont-item .address{font-size: 0.7em;}
-footer .cont-item .icon-big{display: inline-block;width: 3.8em;height: 3.8em;margin-right: 1.5em;background-size: 100%;position: relative;}
-footer .cont-item .icon-be{background-image: url('../images/icon-be.png');left:-0.3em;}
-footer .cont-item .icon-in{background-image: url('../images/icon-in.png');position:relative;left:1px;}
-footer .cont-item .icon-code{background-image: url('../images/icon-code.png');position:relative;left:3px;}
-footer .cont-item .icon-pin{background-image: url('../images/icon-pin.png');margin-right:0;right:-0.4em;}
-footer .cont-item.no-border{text-align: center;}
-footer .cont-item.no-border a{font-size: medium;line-height: normal;float:none;}
+footer .cont-item .address{line-height: 1.5;font-size: 1.4em;}
+footer .cont-item .icon-big{display: inline-block;width: 3.8em;height: 3.8em;background-size: 100%;background-repeat: no-repeat;position: relative;}
+footer .cont-item .icon-be{background-image: url('../images/icon-be.png');}
+footer .cont-item .icon-in{background-image: url('../images/icon-in.png');}
+footer .cont-item .icon-code{background-image: url('../images/icon-code.png');}
+footer .cont-item .icon-pin{background-image: url('../images/icon-pin.png');margin-right:0 !important;right: -2px;}
+footer .cont-item.no-border{text-align: center;width: 100%;display: flex;}
+footer .cont-item.no-border a{font-size: medium;line-height: normal;float:none;flex-grow: 1;}
 footer .copyright{text-align:center;padding-bottom: 1em;}
 
 @media only screen and (max-width:350px){
@@ -161,6 +158,7 @@ footer .copyright{text-align:center;padding-bottom: 1em;}
 }
 
 @media only screen and (min-width:400px) and (max-width:1366px){
+	footer .cont-item .icon-big{margin-right: 10px;}
 	.about-page .section1 h3,.service-page .section1 h3{width:4.4em;}
 }
 

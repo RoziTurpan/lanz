@@ -1,3 +1,26 @@
+window.onerror = function (errorMessage, scriptURI, lineNumber, columnNumber, errorObj) {
+	const errObj = {
+		errorMessage: errorMessage,
+		scriptURI: scriptURI,
+		lineNumber: lineNumber,
+		errorObj: errorObj,
+		userAgent: window.navigator.userAgent,
+		status: 0
+	};
+	$.ajax({
+		url: 'http://111.230.25.238/error',
+		type: 'POST',
+		data: errObj,
+		success: function (data) {
+			//console.log(data)
+		},
+		error: function (err) {
+			console.log(err)
+		}
+	})
+	//console.log(errObj)
+}
+
 $(function(){
 
 	$('.mask,header .menu').width($(document).width()).height($(document).height());
@@ -16,22 +39,43 @@ $(function(){
 		}
 	});
 
-	$(window).on('load resize', function(){
-		if($(window).width() > 1200){
-			location.href = '/en/index.html'
+	let pageName = window.location.pathname;
+	$(window).on('load resize', function () {
+		// if($(window).width() > 1200){
+		// 	location.href = '/index.html'
+		// }
+		/* if (pageName.indexOf('index') > -1) {
+			pageName = pageName.replace(/^\/mobile\/en\//, '/en/');
+		} else {
+			pageName = pageName.replace(/^\/mobile\/en\//, '/en/pages/');
 		}
+		console.log(pageName)
+		if (window.orientation === 90 || window.orientation === 270 && $(window).width() >= 720) {
+			location.href = window.location.origin + pageName;
+		} */
 	})
+	window.addEventListener("orientationchange", function () {
+		window.location.reload();
+		if (pageName.indexOf('index') > -1) {
+			pageName = pageName.replace(/^\/mobile\/en\//, '/en/');
+		} else {
+			pageName = pageName.replace(/^\/mobile\/en\//, '/en/pages/');
+		}
+		if (window.orientation === 90 || window.orientation === -90) {
+			location.href = window.location.origin + pageName;
+		}
+	}, false);
 
 	/*判断滚动条滑动方向*/
 	var direct = 1; // 默认往下
 	var startX, startY, X, Y;
 	$("body").on("touchstart", function (e) {
-		e.preventDefault();
+		// e.preventDefault();
 		startX = e.originalEvent.changedTouches[0].pageX,
 			startY = e.originalEvent.changedTouches[0].pageY;
 	});
 	$("body").on("touchmove", function (e) {
-		e.preventDefault();
+		// e.preventDefault();
 		moveEndX = e.originalEvent.changedTouches[0].pageX,
 			moveEndY = e.originalEvent.changedTouches[0].pageY,
 			X = moveEndX - startX,

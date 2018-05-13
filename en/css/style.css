@@ -21,7 +21,6 @@ i{font-style: normal;}
     font-family: 'open_sansregular';
     src: url('/en/css/fonts/OpenSans-Light-webfont.eot');
     src: url('/en/css/fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/en/css/fonts/OpenSans-Light-webfont.woff2') format('woff2'),
          url('/en/css/fonts/OpenSans-Light-webfont.woff') format('woff'),
          url('/en/css/fonts/OpenSans-Light-webfont.ttf') format('truetype'),
          url('/en/css/fonts/OpenSans-Light-webfont.svg#open_sansregular') format('svg');
@@ -175,3 +174,8 @@ a,a:visited,a:hover{text-decoration:none;color:#969696;}
 /* project-show */
 .project-show-page{/* margin: 30px auto 10px; */font-size: 0;}
 .project-show-page img{/* margin-bottom: 20px; */}
+
+@media only screen and (min-width:750px) and (max-width: 1200px){
+	.head-menu,.footer-menu{width:1200px;}
+	.head-menu .container,.footer-menu .container{width:98%;}
+}

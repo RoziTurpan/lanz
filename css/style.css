@@ -158,3 +158,8 @@ a,a:visited,a:hover{text-decoration:none;color:#969696;}
 /* project-show */
 .project-show-page{/* margin: 30px auto 10px; */font-size:0;margin-bottom:30px;}
 .project-show-page img{/* margin-bottom: 20px; */}
+
+@media only screen and (min-width:750px) and (max-width: 1200px){
+	.head-menu,.footer-menu{width:1200px;}
+	.head-menu .container,.footer-menu .container{width:98%;}
+}

@@ -17,12 +17,27 @@ $(function() {
 	*/
 	// window.location.href = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ? "/mobile/index.html" :  "/index.html";
 	var ua = navigator.userAgent;
-	if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(ua) && $(window).width() <= 1000) {
-		location.href = '/mobile/index.html'
+	if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(ua) && $(window).width() <= 720) {
+		// location.href = '/mobile/index.html'
+		console.log('1')
 	}
-	$(window).on('load resize', function(){
-		if($(window).width() <= 1200){
-			location.href = '/mobile/index.html'
+	// let pageName = window.location.pathname.replace(/^\/pages\//,'/');
+	let pageName = window.location.pathname;
+	if (pageName.indexOf('index') > -1 || pageName === '/'){
+		pageName = '/mobile' + pageName ;
+	}else{
+		pageName = pageName.replace(/^\/pages\//, '/mobile/');
+	}
+	console.log(pageName)
+	/*$(window).on('load resize', function(){
+		if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(ua) && window.orientation === 0 || window.orientation === 180){
+			location.href = window.location.origin + pageName.replace(/^\/pages\//,'/mobile/');
+		}
+	})*/
+	window.addEventListener("orientationchange", function () {
+		// alert(window.orientation)
+		if (window.orientation === 0) {
+			location.href = window.location.origin + pageName.replace(/^\/pages\//,'/mobile/');
 		}
 	})
 
