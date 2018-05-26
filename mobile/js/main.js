@@ -54,8 +54,8 @@ $(function(){
 			location.href = window.location.origin + pageName;
 		} */
 	})
-	window.addEventListener("orientationchange", function () {
-		// alert(window.orientation)
+
+	/* window.addEventListener("orientationchange", function () {
 		window.location.reload();
 		if (pageName.indexOf('index') > -1 || pageName === '/mobile/') {
 			pageName = pageName.replace(/^\/mobile\//, '/');
@@ -65,7 +65,7 @@ $(function(){
 		if (window.orientation === 90 || window.orientation === -90) {
 			location.href = window.location.origin + pageName;
 		}
-	}, false);
+	}, false); */
 
 	/*判断滚动条滑动方向*/
 	var direct = 1; // 默认往下

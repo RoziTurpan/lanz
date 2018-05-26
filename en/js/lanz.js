@@ -17,9 +17,8 @@ $(function() {
 	*/
 	// window.location.href = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ? "/mobile/index.html" :  "/index.html";
 	var ua = navigator.userAgent;
-	if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(ua) && $(window).width() <= 720) {
-		// location.href = '/mobile/index.html'
-		console.log('1')
+	if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(ua) && $(window).width() <= 1200) {
+		location.href = '/mobile/en/index.html'
 	}
 	// let pageName = window.location.pathname.replace(/^\/pages\//,'/');
 	let pageName = window.location.pathname;
@@ -34,11 +33,10 @@ $(function() {
 			location.href = window.location.origin + pageName;
 		}
 	})*/
-	window.addEventListener("orientationchange", function () {
-		// alert(window.orientation)
+	/*window.addEventListener("orientationchange", function () {
 		if (window.orientation === 0) {
 			location.href = window.location.origin + pageName;
 		}
-	})
+	})*/
 
 })

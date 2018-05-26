@@ -69,7 +69,16 @@ a,a:visited,a:hover{text-decoration:none;color:#969696;}
 .mrl20{margin-left: 20px;}
 .index-page{margin: 30px auto;}
 .index-page .section01{width: 700px;font-size: 0;}
+.index-page div a{display:inline-block;position:relative;}
+.index-page .desc{position:absolute;top:0;left:0;transition:ease all 0.3s;background:rgba(0,0,0,0.6);color:#fff;text-align:center;font-size:20px;letter-spacing:1px;opacity:0;}
+.index-page .desc1{width:700px;height:390px;line-height:390px;}
+.index-page .desc2{width:481px;height:799px;line-height:799px;}
+.index-page .desc3{width:700px;height:389px;line-height:389px;}
+.index-page .desc4{width:591px;height:399px;line-height:399px;}
+.index-page .desc5{width:591px;height:399px;line-height:399px;}
+.index-page div a:hover .desc{opacity:1;}
 .index-page .section02{width: 481px;font-size: 0;}
+.index-page .section03{float:left;width:100%;}
 
 /* project */
 .project-page{margin: 30px auto 15px;}
