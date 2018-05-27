@@ -1,26 +1,3 @@
-window.onerror = function (errorMessage, scriptURI, lineNumber, columnNumber, errorObj) {
-	const errObj = {
-		errorMessage: errorMessage,
-		scriptURI: scriptURI,
-		lineNumber: lineNumber,
-		errorObj: errorObj,
-		userAgent: window.navigator.userAgent,
-		status: 0
-	};
-	$.ajax({
-		url: 'http://111.230.25.238/error',
-		type: 'POST',
-		data: errObj,
-		success: function (data) {
-			//console.log(data)
-		},
-		error: function (err) {
-			console.log(err)
-		}
-	})
-	//console.log(errObj)
-}
-
 $(function(){
 
 	$('.mask,header .menu').width($(document).width()).height($(document).height());
