@@ -28,7 +28,7 @@ body{font-size:20px;background: #e6e6e6;font-family:-apple-system, BlinkMacSyste
 .header-wrap{height:7.2em;}
 header{background: #fff;line-height: 6em;;position:relative;z-index:12;max-width:54em;width:100%;margin: 0 auto 1.2em;transition: ease all 0.3s;}
 header .logo{float: left;padding: 0 1.5em;}
-header .logo img{width: 8em;position: relative;top: -0.5em;left: 0.3em;}
+header .logo img{width: 8em;position: relative;top: -0.3em;left: 0.3em;}
 header .nav{float: right;padding: 0 1.5em;}
 header .nav span{display: inline-block;width: 1.5em;height: 1.5em;background: #b4b4b4;border-radius: 1rem;margin: 0 0.2em;position: relative;top: 0.5em;}
 header .menu{position: absolute;top: 6em;left: 0;width: 100%;background: #e6e6e6;padding-top: 2.2em;display: none;}
@@ -169,13 +169,13 @@ footer .copyright{text-align:center;padding-bottom: 1em;}
 	footer .cont-item .icon-big{width: 6em;height: 6em;}
 }
 
-@media only screen and (max-height:550px) and (max-width:1200px){
+@media only screen and (max-height:400px) and (max-width:1200px){
 	.header-wrap{height: 4em;}
 	header{line-height: 3em;}
 	header .menu{top: 3em;}
 	header .menu li{font-size: 1em;line-height: 2.5em;}
-	header .logo img{width: 5em;top: -0.2em;left: 0;}
-	header .nav span{width: 0.8em;height: 0.8em;margin: 0;top: 0;right: -0.6em;}
+	header .logo img{width: 5em;top: -0.1em;left: 0;}
+	header .nav span{width: 0.8em;height: 0.8em;margin: 0;top: 0.1em;right: -0.6em;}
 	.about-page .section1 h3 img,.service-page .section1 h3 img{width: 5em;margin-left: -5px;}
 	.about-page section p,.about-page .section4 .awards p{font-size: 1em;}
 	.about-page .section4 .member h3{font-size: 1.5em;}
