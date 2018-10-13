@@ -18,24 +18,24 @@ $(function() {
 	// window.location.href = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ? "/mobile/index.html" :  "/index.html";
 	var ua = navigator.userAgent;
 	if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(ua) && $(window).width() <= 1200) {
-		location.href = '/mobile/index.html'
+		location.href = '/mobile/en/index.html'
 	}
 	// let pageName = window.location.pathname.replace(/^\/pages\//,'/');
 	let pageName = window.location.pathname;
-	if (pageName.indexOf('index') > -1 || pageName === '/'){
+	if (pageName.indexOf('index') > -1){
 		pageName = '/mobile' + pageName ;
 	}else{
-		pageName = pageName.replace(/^\/pages\//, '/mobile/');
+		pageName = pageName.replace(/^\/en\/pages\//, '/mobile/en/');
 	}
-	console.log(pageName)
+	// console.log(pageName)
 	/*$(window).on('load resize', function(){
 		if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(ua) && window.orientation === 0 || window.orientation === 180){
-			location.href = window.location.origin + pageName.replace(/^\/pages\//,'/mobile/');
+			location.href = window.location.origin + pageName;
 		}
 	})*/
 	/*window.addEventListener("orientationchange", function () {
 		if (window.orientation === 0) {
-			location.href = window.location.origin + pageName.replace(/^\/pages\//,'/mobile/');
+			location.href = window.location.origin + pageName;
 		}
 	})*/
 

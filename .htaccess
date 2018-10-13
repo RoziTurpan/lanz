@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(www.)?new.lanzdesign.cn$
+RewriteCond %{REQUEST_URI} !^/new/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /new/$1
+RewriteCond %{HTTP_HOST} ^(www.)?new.lanzdesign.cn$
+RewriteRule ^(/)?$ new/index.html [L]
